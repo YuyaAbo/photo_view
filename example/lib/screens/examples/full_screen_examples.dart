@@ -17,17 +17,19 @@ class FullScreenExamples extends StatelessWidget {
               child: ListView(
             children: <Widget>[
               ExampleButtonNode(
-                  title: "Large Image",
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const FullScreenWrapper(
-                            imageProvider:
-                                const AssetImage("assets/large-image.jpg"),
-                          ),
-                        ));
-                  }),
+                title: "Large Image",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FullScreenWrapper(
+                        imageProvider:
+                            const AssetImage("assets/large-image.jpg"),
+                      ),
+                    ),
+                  );
+                },
+              ),
               ExampleButtonNode(
                   title: "Small Image (custom background)",
                   onPressed: () {
